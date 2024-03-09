@@ -6,8 +6,15 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
 
     // Get the values of height and weight from input fields
-    const height = parseInt(document.querySelector('#height').value);j
-    const weight = parseInt(document.querySelector('#weight').value);
+    // const height = parseInt(document.getElementById('height').value)
+    // const weight = parseInt(document.getElementById('weight').value)
+
+    //we can use both method getElementById and querySelector
+
+    const height = parseInt(document.querySelector('#height').value)
+    const weight = parseInt(document.querySelector('#weight').value)
+
+    //when we are using querySelector we have to use #idName otherwise it will give error
 
     // Select the element where the result will be displayed
     const result = document.querySelector('#results');
