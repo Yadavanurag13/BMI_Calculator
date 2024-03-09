@@ -1,11 +1,12 @@
 const form = document.querySelector('form');
 
+//Don't take height and weight outside of the event it wil store empty value
 form.addEventListener('submit', function(event) {
     // Prevent the form from submitting normally
     event.preventDefault();
 
     // Get the values of height and weight from input fields
-    const height = parseInt(document.querySelector('#height').value);
+    const height = parseInt(document.querySelector('#height').value);j
     const weight = parseInt(document.querySelector('#weight').value);
 
     // Select the element where the result will be displayed
